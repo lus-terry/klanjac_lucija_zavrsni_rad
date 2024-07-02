@@ -1,0 +1,551 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*Playfair Display font*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*Lora*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+ 
+  font-family: 'Lora';
+  font-weight: 400;
+  background: #f6efe7;
+}
+
+h2 {
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 0.4rem;
+  padding-bottom: 15px;
+}
+
+p { 
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 0.3rem;
+}
+
+
+
+.content_container {
+  background-image: url('https://res.cloudinary.com/lus-terry/image/upload/v1715785254/InSylvis/backrgound3.png');
+  background-size: 100% auto; 
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 150px; /* Adjust this value as needed */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+ 
+}
+
+.content_container_home {
+  
+  padding-top: 500px; /* Adjust this value as needed */
+  
+  width: 100%;
+  
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+ 
+}
+
+
+
+.content_container_blank {
+  
+  background-size: 100% auto; 
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 150px; /* Adjust this value as needed */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  
+ 
+}
+.content_container_blank_admin {
+  
+  background-size: 100% auto; 
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 110px; /* Adjust this value as needed */
+  padding-bottom: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+ 
+}
+
+.content_container_forest {
+
+  background-image: url('https://res.cloudinary.com/lus-terry/image/upload/v1679954835/InSylvis/background2.png');
+  background-size: 100% auto; 
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 150px; /* Adjust this value as needed */
+  /*position: relative;*/
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+ 
+}
+
+.row_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.column_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 3rem;
+}
+
+.dashboard_content {
+  display: flex;
+  flex-direction: column;
+ 
+  padding-left: 220px;
+  padding-right: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.link-active {
+  color: #657140;
+}
+
+.link-inactive {
+  color: grey;
+}
+
+
+.razmaknut_text {
+ 
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 0.3rem;
+}
+
+.normal_text {
+  font-family: 'Lora';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.1;
+}
+
+.button {
+  transition-duration: 0.4s;
+  background-color: transparent;
+  color: black;
+  border: 2px solid #657140;
+  padding: 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #657140 0%, #657140 0%);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 35px;
+
+  font-family: 'Playfair Display';
+  font-weight: 600;
+  font-size: 15px;
+  padding: 5px;
+}
+.button:hover {
+  transition-duration: 0.7s;
+  background-size: 100% 100%;
+  color: white;
+}
+
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+#button_blocked {
+  pointer-events: none;
+  
+  transition-duration: 0.4s;
+  background-color: transparent;
+  color: grey;
+  border: 2px solid grey;
+  padding: 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #657140 0%, #657140 0%);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 35px;
+
+  font-family: 'Playfair Display';
+  font-weight: 600;
+  font-size: 15px;
+  padding: 5px;
+
+}
+
+
+#nav-bar{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 0 40px;
+
+
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #f6efe7; 
+  opacity: 0.9;
+
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 0.3rem;
+  
+}
+
+#nav-bar a {
+  color: #000; /* Crna boja teksta */
+  transition: color 0.3s; /* Glatka tranzicija boje */
+}
+
+#nav-bar a:hover {
+  color: #63b3ed; /* Plava boja teksta kada je miš preko */
+}
+
+#side-bar{
+  position: fixed;
+  z-index: 999;
+  top: 80px;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #f6efe7; 
+  opacity: 0.9;
+  border-right: 1px solid #444;
+  margin-left: 1rem;
+
+
+  a {
+    justify-content: flex-start; 
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 21px;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+
+
+
+    svg {
+      font-size: 20px;
+      margin-right: 0.5rem;
+      justify-content: flex-start;
+    }
+
+
+  }
+
+
+
+}
+
+
+
+#not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(68, 68, 68);
+  min-height: 80vh;
+
+}
+
+#not-found h2{
+  font-size: 70px;
+  font-weight: 500;
+}
+
+#not-found p{
+  font-size: 25px;
+}
+
+
+.form_container {
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 8px 8px 24px 0px #657140;
+
+}
+
+.form_container > h2 {
+  margin-block: 1rem;
+  padding-block: 0.6rem;
+  color: black;
+}
+
+.form_container > form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form_container div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.form_container input {
+  border: none;
+  padding: 0.5rem;
+  border-bottom: 1px solid gray;
+  font-size: 1.1rem;
+  outline: none;
+  
+}
+
+.form_container input::placeholder {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+
+.form_container_cart {
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.form_container_cart > h2 {
+  margin-block: 1rem;
+  padding-block: 0.6rem;
+  color: black;
+}
+
+.form_container_cart > form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+
+
+.form_container_cart input {
+  border: none;
+  padding: 0.5rem;
+  border-bottom: 1px solid gray;
+  font-size: 1.1rem;
+  outline: none;
+  
+}
+
+.form_container_cart input::placeholder {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.product_name {
+  cursor: pointer;
+  color: initial;
+}
+
+.product_name:hover {
+  color: rgba(68, 82, 27, 0.5);
+}
+
+.admin_overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  gap: 1rem;
+  background-color: #657140;
+  border-radius: 10px; 
+  padding: 20px;
+
+}
+
+.widget_container_div {
+  display: flex;
+
+  align-items: center;
+  text-align: center;
+
+  height: 60px;
+  width: 200px;
+  justify-content: space-between;
+
+}
+
+.widget_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+}
+
+.percentage_div {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  
+}
+
+.admin_chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 550px;
+  gap: 1rem;
+  background-color:rgb(245, 245, 238); 
+  border: 2px solid #657140;
+  border-radius: 10px; 
+  padding: 20px;
+}
+
+.admin_transactions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 375px;
+  gap: 1rem;
+  background-color:rgb(245, 245, 238); 
+  border: 2px solid #657140;
+  border-radius: 10px; 
+  padding: 20px;
+  background-color: #a1ad7d;
+}
+
+
+.transaction_container_div {
+  display: flex;
+
+  align-items: center;
+  text-align: center;
+
+  height: 40px;
+  width: 650px;
+  
+  justify-content: space-between;
+
+  background-color: rgba(101, 113, 64, 0.5);
+
+}
+
+.imageContainerList img{
+  height: 50px;
+
+}
+.actionsContainerList {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
